@@ -1,0 +1,37 @@
+GET http://127.0.0.1:5000/webapi/v1/users
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJhbWFuZGEiLCJlbWFpbCI6ImFtYW5kYUBnbWFpbC5jb20iLCJpYXQiOjE2NjMyNTE2NjQsImV4cCI6MTY2MzI1MTY5NH0.k7ikdYlzXFxJawbIy-h02XWEuvnRjhs28hGqX2yWw4E
+###
+GET http://127.0.0.1:5000/webapi/v1/userbyid
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQ3LCJuYW1lIjoiYW1hbmRhIiwiZW1haWwiOiJhbWFuZGFAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjYzNTExMDU1LCJleHAiOjE2NjM1MTEwODV9.Id4n4biv08yQL_WmJH6acZYB7g2IOuijLMZfrH0vr8s
+
+{
+    "email":"amanda2@gmail.com"
+}
+
+###
+POST http://127.0.0.1:5000/webapi/v1/users
+Content-Type: application/json
+
+{
+    "name": "amanda 5",
+    "email":"amandahayygh@gmail.com",
+    "password":"123456",
+    "confPassword":"123456",
+    "role": ""
+}
+
+###
+POST http://127.0.0.1:5000/webapi/v1/login
+Content-Type: application/json
+
+{
+    "email":"amanda@gmail.com",
+    "password":"Admin123"
+}
+
+###
+GET http://127.0.0.1:5000/webapi/v1/token
+
+###
+DELETE  http://127.0.0.1:5000/webapi/v1/logout
